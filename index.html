@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elfster</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="first"><img src="elfster.png" alt="elfster" /></div>
+    <hr class="loading-bar-front"/>
+    <div class="forms">
+      <img src="elfster11.jpeg" alt="elfster" id="img2" />
+      <div id="form1" >
+      <form class="formschange" id="formContainer">
+        <h1>Start Your Secret Santa</h1>
+        <p>
+          Organize your Elfster exchange lickety-split. You'll be done <br />in
+          less than two minutes. Then get ready to exchange gifts!<br />
+          Already did this last year?
+          <a href="#">Use your previous exchanges.</a>
+        </p>
+        <div class="formsfirst">
+          <h2>Enter Names</h2>
+          <label for="yourname" id="yn">Your Name</label><br />
+          <input
+            type="text"
+            id="yourname"
+            name="yourname"
+            placeholder="Enter Name"
+          /><br />
+          <input type="radio" id="OandP" name="role"  />
+          <label for="OandP">I'm organizing and participating</label><br />
+          <input type="radio" id="O" name="role"  />
+          <label for="O">I'm just organizing</label><br />
+          <label for="addFriend">Add Your Friends</label>
+          <p id="biggroup">Got a big group? <a href="#">Click here</a></p>
+          <input
+            type="text"
+            id="yourname"
+            name="yourname"
+            placeholder="Enter Name 2"
+          /><br />
+          <input
+            type="text"
+            id="yourname"
+            name="yourname"
+            placeholder="Enter Name 3"
+          /><br />
+          <input
+            type="text"
+            id="yourname"
+            name="yourname"
+            placeholder="Enter Name 4"
+          /><br />
+          <input
+            type="text"
+            id="yourname"
+            name="yourname"
+            placeholder="Enter Name 5"
+          /><br />
+          <div id="inputContainer"></div>
+          <br />
+          <button id="addmore">+Add more names?</button></br>
+          <input id="submitload"  type="submit" value=" get the party started ➡️ " />
+        </div>
+      </form>
+      </div>
+      <div id="form2" style="display: none;">
+        <h1>The gifting details</h1>
+        <div class="two-line-text" id="gap"><p>
+          Personalize your Elfster exchange below<br><span class="middle-line"> with important info guests need to know.</span></p>
+        </div>
+        <form >
+          <div class="formsfirst">
+            <label for="elfsterexchange" id="elfsterexchange"
+              >Name Your Elfster Exchange</label
+            ><br />
+            <input
+              type="text"
+              id="exchangename"
+              name="exhangename"
+              placeholder="e.g. Elfie's Secret Santa Extravaganza"
+            /><br />
+            <label for="setdate" id="setdate">Set The Date</label><br />
+            <input
+              type="date"
+              id="sdate"
+              name="sdate"
+              placeholder="When is it happening?"
+            /><br />
+            <label for="signupdeadline" id="signup">Sign-up deadline</label><br />
+            <input
+              type="date"
+              id="deadlinedate"
+              name="deadlinedate"
+              value="2024-12-31" readonly/><br />
+            <label for="sendinggiftsmail" id="sendmail"
+              >sending Gifts By Mail?</label
+            ><br />
+            <input type="checkbox" id="giftsbymail" name="giftsbymail" />
+            <label for="giftsbymail" id="giftmail"
+              >By checking this box, participants will be asked to <br />
+              provide a mailing address where their gift should be
+              <br />sent</label
+            ><br />
+            <label for="giftbudget" id="giftbudget">Gift Budget</label><br />
+            <input
+              type="number"
+              id="currencyInput"
+              value="$"
+              placeholder="50"
+              pattern="^\d+(,\d{3})*(\.\d{2})?$"
+            /><br />
+            <label for="email" id="mail">Your Email</label><br />
+            <input
+              type="email"
+              id="email2form"
+              placeholder="Enter email address"
+            /><br />
+            <label for="hearaboutus" id="hearaboutus"
+              >How did you hear about Elfster?</label
+            ><br />
+            <input list="browsers" id="list" />
+            <datalist id="browsers">
+              <option value="Friend/Family"></option>
+              <option value="Bing"></option>
+              <option value="Facebook"></option>
+              <option value="Pinterest"></option>
+              <option value="SecretSanta.com"></option>
+              <option value="Google"></option>
+              <option value="TikTok"></option>
+              <option value="Other"></option>
+            </datalist>
+            <br />
+            <label for="toaddnote" id="toaddnote">Add a Note</label><br />
+            <textarea
+              id="note"
+              name="note"
+              class="placeholder"
+              placeholder="Hey Everyone! We're exchanging  gifts the super fun  way-secretly! \n No drawing names out of an old hat. We've got Elfster to do that.\n Don't forget to make a Wishlist. It's how you'll score the perfect gift. See ya soon!"
+            ></textarea
+            ><br />
+            <p>
+              Want to <a href="" id="remove">select a photo</a> for your event?
+            </p>
+            <button class="ficon" onclick="goToPreviousForm1(event)">
+              <i class="fa-solid fa-backward fa-3x" id="f1icon"></i>
+            </button>
+            <input
+            id="submitForm2"
+              type="submit"
+              value=" next, account setup ➡️ "
+            />
+          </div>
+        </form>
+      </div>
+      <div id="form3" style="display: none;" class="formsfirst" >
+        <form  class="lastelem">
+        <div class="two-line-text"><h2>Hey everyone! Get ready for some gifting fun!<br><span class="middle-line">Spread the word and join us for an exciting gift exchange</span> experience!</h2></div>
+        <div class="two-line-text">
+          <p>Your Elfster exchange is good to go.<br>
+            <span class="middle-line">Now copy and share the note below to let your friends know!</span>
+          </p>
+        </div>
+          <p style="font-family: cursive;">Names will be drawn on March 19, 2024.</p><br>
+          <i class="fa-solid fa-gift fa-2x" style="margin-left: 70px;"></i><br>
+        <textarea id="notes" type="text" name="message" placeholder="      
+     Leave a message"></textarea><br>
+     <button onclick="goToPreviousForm2()">
+      <i class="fa-solid fa-backward fa-3x" id="f2icon"></i>
+    </button>
+    <input
+    id="buttonform3"
+      type="submit"
+      onclick="handleSubmit3()"
+      value=" submit  "
+    />
+        </form>
+      </div>
+    </div>
+    <div class="stats-container">
+      
+        <span id="stats111">
+        <i class="fa-sharp fa-solid fa-handshake " id="stats1"></i>
+        <p id="stats11">Trusted by 33 million people </p></span>
+        <span id="stats222"><i class="fa-solid fa-star" id="stats2"></i>
+        <i class="fa-solid fa-star" id="stats2"></i>
+        <i class="fa-solid fa-star" id="stats2"></i>
+        <i class="fa-solid fa-star" id="stats2"></i>
+        <i class="fa-solid fa-star" id="stats2"></i>
+        <p id="stats22">4.9 stars | 234K ratings</p></span>
+     
+      <span id="stats333">
+        <i class="fa-sharp fa-solid fa-award" id="stats3"></i>
+        <p id="stats33">#1 Secret Santa Generator</p>
+      </span>
+      
+    </div>
+    <div class="detailsContainer">
+      <a href="#">elfster</a><br />
+      <a href="https://www.elfster.com/content/about/">About</a><br />
+      <a href="#">Advertise with Us</a><br />
+      <a href="https://help.elfster.com/knowledge">Help</a><br />
+      <a href="#">Tell a Friend</a>
+    </div>
+    <div class="mediaContainer">
+      <div class="mediamenu">
+        <div class="menu">
+          <p>Follow us on Social Media</p>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="social-lists" class="hide">
+          <li>
+            <a href="" class="fab fa-facebook" style="color: blue ;letter-spacing: 0.1rem;">  Facebook </a>
+          </li>
+          <li>
+            <a href="" class="fab fa-youtube" style="color: red;letter-spacing: 0.1rem;"> Youtube </a>
+          </li>
+          <li>
+            <a href="" class="fab fa-instagram" style="color: orangered;letter-spacing: 0.1rem;"> Instagram </a>
+          </li>
+          <li>
+            <a href="" class="fab fa-twitter" style="color: black;letter-spacing: 0.1rem;"> X </a>
+          </li>
+          <li>
+            <a href="" class="fab fa-pinterest" style="color: red ; letter-spacing: 0.1rem; "> Pinterest </a>
+          </li>
+        </ul>
+      </div>
+      <div id="hiddenIndicator" class="hide">
+        <img id="hiddenImage" src="followus.jpeg" alt="Hidden Image" class="hide"/>
+      </div>
+      <div class="download">
+        <p>Download the App:</p>
+        <br />
+        <a href="https://apps.apple.com/us/app/elfster-2-0/id751594890"
+          ><img
+            src="Download_on_the_App_Store_Badge.svg.png"
+            alt="Download on the App Store"
+        /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.elfster.elfdroid"
+          ><img src="ezgif-7-677494d009.png" alt="GET IT ON Google Play"
+        /></a>
+      </div>
+    </div>
+    <div class="signupContainer">
+      <div>
+        <p>Sign Up for Gifts, Giveaways & Good News!</p>
+      </div>
+      <form id="myForm" onsubmit="handleSubmit()">
+        <div class="input-with-arrow">
+          <input
+              type="email"
+              id="textInput"
+              placeholder="Enter email address"
+            />
+          <div class="arrow-icon" >&#x2192;</div>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <!-- Footer content goes here -->
+      &copy; 2024 Elfster, Inc. | All Rights Reserved
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+/* CSS for the combined input field and button */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  border-bottom: 4rem solid #edc84b;
+  overflow-x: hidden;
+}
+.first {
+  background-color: #c50677;
+}
+.first img {
+  width: 40%;
+  transform: translateX(70%);
+  height: 10rem;
+}
+.loading-bar-front {
+  border-color: teal;
+  height: 20px;
+  background-color: teal;
+  width: 0%;
+  border: none;
+}
+.forms {
+  padding: 2.4rem;
+  display: flex;
+  background-color: white;
+}
+.forms img {
+  width: 50%;
+  height: 90vh;
+}
+.forms form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forms h1 {
+  color: black;
+  font-weight: 700;
+}
+.forms p {
+  padding: 20px;
+  font-weight: 100;
+}
+.formsfirst {
+  margin-left: 10px;
+  position: relative;
+}
+.formsfirst h2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.formsfirst #yn,
+#biggroup {
+  font-weight: 200;
+  color: teal;
+}
+.formsfirst #yourname {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.formsfirst #OandP,
+#O {
+  margin-bottom: 10px;
+}
+.formsfirst button {
+  color: teal;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+}
+.formsfirst input[type="submit"] {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  width: 430px;
+  background-color: teal;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+}
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 2.4rem;
+  height: 200px;
+  background-color: teal;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+#stats111 {
+  transform: translateX(-80%);
+  background-color: teal;
+}
+#stats222 {
+  transform: translateX(10%);
+  background-color: teal;
+}
+#stats333 {
+  transform: translateX(130%);
+  background-color: teal;
+}
+#stats1,
+#stats2,
+#stats3 {
+  background-color: teal;
+}
+#stats22,
+#stats33,
+#stats11 {
+  background-color: teal;
+  color: white;
+}
+#stats1 {
+  transform: translateX(400%);
+  color: white;
+}
+#stats3 {
+  transform: translateX(650%);
+  color: white;
+}
+#stats2 {
+  color: rgb(189, 189, 17);
+  transform: translateX(150%);
+}
+.detailsContainer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+.detailsContainer a {
+  font-size: 20px;
+  font-weight: 700px;
+  display: block;
+  text-decoration: none;
+}
+.mediaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  gap: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.menu {
+  background-color: aliceblue;
+  width: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu .fas {
+  transition: transform 0.2s;
+}
+.menu p {
+  margin: 0 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.social-lists {
+  background: #333;
+  width: 300px;
+  opacity: 1;
+  padding: 10px;
+  list-style-type: none;
+}
+.social-lists li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  transform: padding 0.2s linear;
+}
+.social-lists li:hover {
+  background: aliceblue;
+  padding-left: 10px;
+}
+.social-lists li .fab {
+  margin: 0 10px;
+}
+.social-lists a {
+  text-decoration: none;
+  font-size: 15px;
+}
+#hiddenImage {
+  width: 15rem;
+  aspect-ratio: 1;
+  align-self: start;
+}
+.rotate .fas {
+  transform: rotate(180deg);
+}
+.hide {
+  visibility: hidden;
+}
+.download {
+  transform: translateX(40%);
+  padding: 10px;
+}
+.download p {
+  transform: translateX(30%);
+}
+.download img {
+  width: 10rem;
+  padding: 30px;
+  aspect-ratio: 3;
+  align-self: start;
+  cursor: pointer;
+}
+.signupContainer {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  transform: translateX(50%);
+  margin-bottom: 20px;
+}
+.signupContainer p {
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.signupContainer form {
+  background-color: white;
+  color: white;
+}
+.input-with-arrow {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.input-with-arrow input[type="email"] {
+  padding: 10px;
+  padding-right: 35px; /* Space for the arrow and additional padding */
+  border: 1px solid #ccc; /* Border for the input field */
+  border-radius: 5px;
+}
+.input-with-arrow .arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333; /* Arrow color */
+}
+.x {
+  background-color: 4rem solid #edc84b;
+}
+.footer {
+  background-color: teal; /* Set the background color for the footer */
+  color: white; /* Set text color for the footer */
+  text-align: center; /* Center-align text in the footer */
+  padding: 10px 0; /* Add padding to the footer */
+}
+
+@media only screen and (max-width: 768px) {
+  .first img {
+    width: 30%;
+    transform: translateX(100%);
+    align-items: center;
+    height: auto;
+  }
+
+  .forms {
+    padding: 1.6rem; /* Reduce padding for compact layout */
+    flex-direction: row;
+  }
+
+  .forms img {
+    width: 50%;
+    height: 100%;
+    transform: translateX(50%) !important;
+    margin-top: -20px;
+  }
+
+  .forms form {
+    padding: 1.6rem;
+  }
+
+  .formsfirst #yourname {
+    width: 100%; /* Make the input field full width */
+    max-width: 100%; /* Ensure input field doesn't overflow */
+  }
+
+  .formsfirst button,
+  .formsfirst input[type="submit"] {
+    width: 100%; /* Make buttons full width on smaller screens */
+  }
+
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin: 0;
+    border-radius: 10px;
+    /* Adjust border-radius for smaller screens */
+    gap: 5rem; /* Reduce the gap between elements */
+  }
+  #stats111 {
+    transform: none;
+  }
+  #stats333 {
+    transform: none;
+  }
+  #hiddenImage {
+    transform: translateY(40%) !important;
+    transform: translateX(-10%);
+    width: 9rem;
+  }
+  .download {
+    transform: translateX(-25%);
+  }
+  .download p {
+    transform: translateX(5%);
+    font-size: 17px;
+  }
+  .download img {
+    width: 100%;
+    transform: translateX(-10%);
+  }
+
+  .signupContainer {
+    width: 100%; /* Make signup container full width */
+    transform: none; /* Remove translation */
+  }
+
+  .footer {
+    padding: 1.6rem 0; /* Add padding to the footer for spacing */
+  }
+
+  /* Additional adjustments as needed */
+}

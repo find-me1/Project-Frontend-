@@ -1,0 +1,173 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1 {
+  padding: 10px;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.formsfirst {
+  padding: 10px;
+}
+#gap {
+  width: 500px;
+  height: 50px;
+  margin-left: 40px;
+}
+#elfsterexchange {
+  font-weight: 700;
+  color: black;
+}
+#exchangename,
+#email2form,
+#sdate,
+#deadlinedate,
+#currencyInput,
+#list {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+#note {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  resize: none;
+}
+#note::placeholder {
+  line-height: 1.5em; /* Adjust as needed based on your font size and line height */
+}
+.ficon {
+  margin-top: 30px;
+  cursor: pointer;
+  width: 10px;
+  border: none;
+}
+#f1icon {
+  margin-left: -70px;
+  transform: translateY(18%);
+}
+#submitForm2 {
+  transform: translateX(0%);
+}
+#remove {
+  text-decoration: none;
+}
+#setdate {
+  font-weight: 700;
+  color: black;
+}
+#signup,
+#sendmail,
+#giftbudget,
+#mail,
+#hearaboutus,
+#toaddnote {
+  font-weight: 700;
+  color: black;
+  margin-bottom: 100px;
+}
+#form3 {
+  background-color: white;
+}
+#form3 form {
+  transform: translateY(10%);
+}
+.lastelem {
+  border-radius: 100px;
+  width: 80%;
+  align-items: center;
+}
+.lastelem h2 {
+  margin-left: 40px;
+}
+.two-line-text {
+  text-align: center; /* Align the text in the center */
+  line-height: 1.5; /* Adjust line height for readability */
+}
+.two-line-text p {
+  font-size: 18px;
+  font-weight: 10px;
+}
+.middle-line {
+  display: inline-block;
+  vertical-align: middle;
+}
+#notes {
+  margin-left: 30px;
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+  resize: none;
+}
+#f2icon {
+  margin-left: -400px;
+  margin-top: 30px;
+}
+#buttonform3 {
+  margin-top: -55px;
+  margin-left: 35px;
+  width: 300px;
+  font-size: 18px;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .forms {
+    flex-direction: column;
+    padding: 1.6rem;
+
+    .forms img {
+      width: 100%;
+      height: auto;
+    }
+
+    .forms form {
+      padding: 1.6rem;
+    }
+
+    #exchangename,
+    #email2form,
+    #sdate,
+    #deadlinedate,
+    #currencyInput,
+    #list,
+    #note {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .ficon {
+      margin-top: 1.6rem;
+    }
+
+    #f1icon {
+      transform: translateX(-500%) !important;
+    }
+
+    #submitForm2 {
+      transform: translateY(-70%);
+      margin-top: -3rem;
+      width: 100%;
+    }
+    #form3 {
+      transform: translateY(-6%);
+      width: 100%;
+      height: 1% !important;
+    }
+  }
+}
