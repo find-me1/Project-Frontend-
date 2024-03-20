@@ -43,7 +43,7 @@ h1 {
   resize: none;
 }
 #note::placeholder {
-  line-height: 1.5em; /* Adjust as needed based on your font size and line height */
+  line-height: 1.5em;
 }
 .ficon {
   margin-top: 30px;
@@ -90,8 +90,8 @@ h1 {
   margin-left: 40px;
 }
 .two-line-text {
-  text-align: center; /* Align the text in the center */
-  line-height: 1.5; /* Adjust line height for readability */
+  text-align: center;
+  line-height: 1.5;
 }
 .two-line-text p {
   font-size: 18px;
